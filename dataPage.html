@@ -29,18 +29,18 @@
                         <h2 class="form-subtitle">Cadastro de Usuário</h2>
                         <div class="full-name-container">
                             <label for="">Nome completo</label>
-                            <input class="input-name" type="text" placeholder="João Souza">
+                            <input class="input-name" id="input-name" type="text" placeholder="João Souza" disabled>
                         </div>
     
                         <div class="address-code-container">
                             <span>
                                 <label for="">CEP</label><br>
-                                <input class="input-cep" type="email" placeholder="00000-000">
+                                <input class="input-cep" id="input-cep" type="text" maxlength="8">
                             </span>
 
                             <span>
-                                <label for="">Endereço</label><br>
-                                <input class="input-address" type="text" name="address" id="address">
+                                <label for="">Rua</label><br>
+                                <input class="input-address" id="input-address" type="text" name="address" id="address">
                             </span>
                         </div>
 
@@ -52,19 +52,19 @@
 
                             <span>
                                 <label for="">Complemento</label>
-                                <input class="input-address-plus" type="text">
+                                <input class="input-address-plus" id="input-address-plus" type="text">
                             </span>
 
                             <span>
                                 <label for="">Bairro</label>
-                                <input class="input-neighborhood" type="text">
+                                <input class="input-neighborhood" id="input-neighborhood" type="text">
                             </span>
                         </div>
 
                         <div class="city-state-container">
                             <span>
                                 <label for="">Cidade</label><br>
-                                <input class="input-city" type="text">
+                                <input class="input-city" id="input-city" type="text">
                             </span>
     
                             <span>
@@ -85,6 +85,7 @@
                                     <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
                                     <option value="minas-gerais">Minas Gerais</option>
                                     <option value="para">Pará</option>
+                                    <option value="paraiba">Paraíba</option>
                                     <option value="parana">Paraná</option>
                                     <option value="pernambuco">Pernambuco</option>
                                     <option value="piaui">Piauí</option>
@@ -102,14 +103,14 @@
 
                             <span>
                                 <label for="">UF</label><br>
-                                <input class="input-uf" type="text">
+                                <input class="input-uf" id="input-uf" type="text">
                             </span>
                         </div>
 
                         <label for="">Número de Telefone</label>
                         <div class="tel-container">
-                            <input class="cod-country" type="text" disabled>
-                            <input class="input-tel" type="tel" name="telefone" size="20" onkeypress="mascara(this)">
+                            <input class="cod-country" id="cod-country" type="text" disabled>
+                            <input class="input-tel" type="tel" name="telefone" size="20" disabled>
                         </div>
 
                         <div class="btn-container">
@@ -132,6 +133,6 @@
         </nav>
     </footer>
 
-    <script src="./js/newUser.js"></script>
+    <script src="./js/scriptDataPage.js"></script>
 </body>
 </html>
