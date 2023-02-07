@@ -49,9 +49,14 @@ body {
     font-size: 14px;
 }
 
-.form-subtitle {
+.data-user-form .form-subtitle {
     margin-top: 30px;
     margin-bottom: 2px;
+}
+
+.data-user-form .input-name, .tel-container .cod-country, .tel-container .input-tel {
+    background: #E6E0E0;
+    cursor: not-allowed;
 }
 
 .full-name-container, .address-code-container, .full-address-container, .city-state-container {
