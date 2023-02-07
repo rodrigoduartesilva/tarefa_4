@@ -29,6 +29,10 @@ body {
     border-radius: 3px;
 }
 
+.data-user-form input:focus {
+    border: 1px solid #284A5E;
+}
+
 .data-user-form::placeholder {
     font-weight: 400;
     font-size: 14px;
@@ -39,31 +43,103 @@ body {
     margin-bottom: 2px;
 }
 
-.full-name-container, .address-code-container, .full-address-container, .address-plus-container, .city-state-container {
+.full-name-container, .address-code-container, .full-address-container, .city-state-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.full-address-container, .address-plus-container, .city-state-container {
+.full-address-container, .city-state-container {
     flex-direction: row;
 }
 
 .address-code-container {
-    width: 25%;
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
 }
 
+.address-code-container .input-cep {
+    width: 100px;
+}
 
-.full-address-container .input-address {
-    width: 100%;
+.address-code-container .input-address {
+    width: 390px;
+}
+
+.full-address-container .input-number {
+    width: 78px;
+}
+
+.full-address-container .input-address-plus {
+    width: 244px;
+}
+
+.full-address-container .input-neighborhood {
+    width: 150px;
+    margin-left: 6px;
+}
+
+.city-state-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-state-container .input-city {
+    width: 242px;
+}
+
+.city-state-container #state-option {
+    all: unset;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.city-state-container #state-option:focus {
+    border: 1px solid #284A5E;
 }
 
 .city-state-container .input-uf {
     width: 30px;
 }
 
+.tel-container .cod-country {
+    width: 50px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .btn-update-data {
-    width: 190px;
-    padding: 12px;
-    margin: 15px auto 35px;
+    all: unset;
+    width: 180px;
+    text-align: center;
+    margin-top: 12px;
+    padding: 6px 5px;
+    background: linear-gradient(93.38deg, #496F74 -3.47%, #2D4F61 84.29%);
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.btn-update-data:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+.btn-update-data:focus {
+    opacity: .9;
 }

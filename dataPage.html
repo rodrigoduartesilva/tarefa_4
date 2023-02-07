@@ -33,28 +33,28 @@
                         </div>
     
                         <div class="address-code-container">
-                            <label for="">CEP</label>
-                            <input class="input-cep" type="email" placeholder="00000-000">
-                        </div>
+                            <span>
+                                <label for="">CEP</label><br>
+                                <input class="input-cep" type="email" placeholder="00000-000">
+                            </span>
 
-                        <div class="full-address-container">
                             <span>
                                 <label for="">Endereço</label><br>
                                 <input class="input-address" type="text" name="address" id="address">
                             </span>
-                            
-                            <span>
-                                <label for="">Número</label><br>
-                                <input class="input-number" type="number">
-                            </span>
                         </div>
 
-                        <div class="address-plus-container">
+                        <div class="full-address-container">
+                            <span>
+                                <label for="">Número</label>
+                                <input class="input-number" type="number">
+                            </span>
+
                             <span>
                                 <label for="">Complemento</label>
                                 <input class="input-address-plus" type="text">
                             </span>
-                            
+
                             <span>
                                 <label for="">Bairro</label>
                                 <input class="input-neighborhood" type="text">
@@ -63,12 +63,12 @@
 
                         <div class="city-state-container">
                             <span>
-                                <label for="">Cidade</label>
+                                <label for="">Cidade</label><br>
                                 <input class="input-city" type="text">
                             </span>
     
                             <span>
-                                <label for="">Estado</label>
+                                <label for="">Estado</label><br>
                                 <select id="state-option">
                                     <option value="none">Selecione seu Estado</option>
                                     <option value="acre">Acre</option>
@@ -101,7 +101,7 @@
                             </span>
 
                             <span>
-                                <label for="">UF</label>
+                                <label for="">UF</label><br>
                                 <input class="input-uf" type="text">
                             </span>
                         </div>
@@ -112,7 +112,9 @@
                             <input class="input-tel" type="tel" name="telefone" size="20" onkeypress="mascara(this)">
                         </div>
 
-                        <button class="btn-update-data">Atualizar Dados</button>
+                        <div class="btn-container">
+                            <button class="btn-update-data">Atualizar Dados</button>
+                        </div>
                     </div>
                 </form>
             </div>
