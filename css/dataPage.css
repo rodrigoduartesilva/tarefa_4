@@ -1,0 +1,69 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 700px;
+    height: 520px;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.data-user-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    height: 520px;
+    background: #FFFFFF;
+    padding: 90px;
+}
+
+.data-user-form input {
+    all: unset;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.data-user-form::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.form-subtitle {
+    margin-top: 30px;
+    margin-bottom: 2px;
+}
+
+.full-name-container, .address-code-container, .full-address-container, .address-plus-container, .city-state-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.full-address-container, .address-plus-container, .city-state-container {
+    flex-direction: row;
+}
+
+.address-code-container {
+    width: 25%;
+}
+
+
+.full-address-container .input-address {
+    width: 100%;
+}
+
+.city-state-container .input-uf {
+    width: 30px;
+}
+
+.btn-update-data {
+    width: 190px;
+    padding: 12px;
+    margin: 15px auto 35px;
+}

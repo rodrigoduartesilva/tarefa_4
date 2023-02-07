@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/headerFooterDataForm.css">
+    <link rel="stylesheet" href="./css/dataPage.css">
+    <title>Cadastro - Kreativ</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-header">
+                <h1>Kreativ</h1>
+                <ul>
+                    <li><a href="./index.html" target="_blank">Home</a></li>
+                    <li><a href="./contato.html" target="_blank">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="form-section">
+                <form class="form-container-data" action="">
+                    <div class="data-user-form">
+                        <h2 class="form-subtitle">Cadastro de Usuário</h2>
+                        <div class="full-name-container">
+                            <label for="">Nome completo<sup>*</sup></label>
+                            <input class="input-name" type="text" placeholder="João Souza">
+                        </div>
+    
+                        <div class="address-code-container">
+                            <label for="">CEP</label>
+                            <input class="input-cep" type="email" placeholder="00000-000">
+                        </div>
+
+                        <div class="full-address-container">
+                            <span>
+                                <label for="">Endereço</label><br>
+                                <input class="input-address" type="text" name="address" id="address">
+                            </span>
+                            
+                            <span>
+                                <label for="">Número</label><br>
+                                <input class="input-number" type="number">
+                            </span>
+                        </div>
+
+                        <div class="address-plus-container">
+                            <span>
+                                <label for="">Complemento</label>
+                                <input class="input-address-plus" type="text">
+                            </span>
+                            
+                            <span>
+                                <label for="">Bairro</label>
+                                <input class="input-neighborhood" type="text">
+                            </span>
+                        </div>
+
+                        <div class="city-state-container">
+                            <span>
+                                <label for="">Cidade</label>
+                                <input class="input-city" type="text">
+                            </span>
+    
+                            <span>
+                                <label for="">Estado</label>
+                                <select id="state-option">
+                                    <option value="none">Selecione seu Estado</option>
+                                    <option value="acre">Acre</option>
+                                    <option value="alagoas">Alagoas</option>
+                                    <option value="amapa">Amapá</option>
+                                    <option value="amazonas">Amazonas</option>
+                                    <option value="bahia">Bahia</option>
+                                    <option value="ceara">Ceará</option>
+                                    <option value="distrito-federal">Distrito Federal</option>
+                                    <option value="espirito-santo">Espirito Santo</option>
+                                    <option value="goias">Goiás</option>
+                                    <option value="maranhao">Maranhão</option>
+                                    <option value="mato-grosso">Mato Grosso</option>
+                                    <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
+                                    <option value="minas-gerais">Minas Gerais</option>
+                                    <option value="para">Pará</option>
+                                    <option value="parana">Paraná</option>
+                                    <option value="pernambuco">Pernambuco</option>
+                                    <option value="piaui">Piauí</option>
+                                    <option value="rio-de-janeiro">Rio de Janeiro</option>
+                                    <option value="rio-grande-do-norte">Rio Grande do Norte</option>
+                                    <option value="rio-grande-do-sul">Rio Grande do Sul</option>
+                                    <option value="rondonia">Rondônia</option>
+                                    <option value="roraima">Roraima</option>
+                                    <option value="santa-catarina">Santa Catarina</option>
+                                    <option value="sao-paulo">São Paulo</option>
+                                    <option value="sergipe">Sergipe</option>
+                                    <option value="tocantins">Tocantins</option>
+                                </select>
+                            </span>
+
+                            <span>
+                                <label for="">UF</label>
+                                <input class="input-uf" type="text">
+                            </span>
+                        </div>
+
+                        <label for="">Número de Telefone</label>
+                        <div class="tel-container">
+                            <input class="cod-country" type="text" disabled>
+                            <input class="input-tel" type="tel" name="telefone" size="20" onkeypress="mascara(this)">
+                        </div>
+
+                        <button class="btn-update-data">Atualizar Dados</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <nav>
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="./sobreNos.html">Sobre nós</a></li>
+                    <li><a href="./suporte.html">Suporte</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="./js/newUser.js"></script>
+</body>
+</html>
