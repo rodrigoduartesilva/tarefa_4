@@ -20,10 +20,21 @@ body {
     padding: 90px;
 }
 
+.data-user-form .form-subtitle {
+    font-weight: 700;
+    color: #496F74;
+    margin-bottom: 10px;
+}
+
+.data-user-form label {
+    font-weight: 400;
+    font-size: 15px;
+}
+
 .data-user-form input {
     all: unset;
     height: 30px;
-    margin-top: 5px;
+    margin: 5px 0 8px 0;
     padding: 5px;
     border: 1px solid #CCCCCC;
     border-radius: 3px;
@@ -119,7 +130,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .btn-update-data {
