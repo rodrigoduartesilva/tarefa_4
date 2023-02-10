@@ -5,8 +5,7 @@ btnLogin.addEventListener('click', function () {
     let loginField = document.querySelector(".login-user-form");
     let inputEmail = document.querySelector(".input-email");
     let inputPass = document.querySelector(".input-password");
-    let loginSuccess = document.querySelector("#login-success");
-    const successText = document.createTextNode("Login realizado com sucesso. Seja bem-vindo(a) a Kreativ!");
+    let loginSuccess = document.getElementById("login-success");
 
     if (inputEmail.value === '' && inputPass.value === '') {
         alert('Digite seu email e sua senha para realizar o login!');
@@ -18,13 +17,15 @@ btnLogin.addEventListener('click', function () {
         alert('Email ou senha incorretos, verificar e tentar novamente!');
     } else {
         document.querySelector(".login-user-form").remove();
-        loginSuccess.appendChild(successText);
+        loginSuccess.innerHTML = "<p class='login-success-container'>Login realizado com sucesso. Seja bem-vindo(a) a Kreativ!</p>"
 
         setTimeout(() => {
-            successText.remove();
+            loginSuccess.remove();
             formSpace.appendChild(loginField);
             inputEmail.value = '';
             inputPass.value = '';
+            window.location.reload();
         }, 3000);
+
     }
 });

@@ -6,7 +6,7 @@ main {
 }
 
 .form-section {
-    width: 350px;
+    width: 21.875rem;
     height: 33.5rem;
     display: flex;
     flex-direction: column;
@@ -14,11 +14,16 @@ main {
 }
 
 
-.login-success {
+.login-success-container {
     width: 350px;
+    height: 536px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+    padding: 5px;
     background: #FFFFFF;
     color: #496F74;
 }
@@ -121,7 +126,7 @@ main {
     align-items: center;
     justify-content: center;
     background: linear-gradient(93.38deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    width: 350px;
+    width: 21.875rem;
     height: 33.5rem;
     padding: 30px;
     font-weight: 700;
@@ -134,4 +139,20 @@ main {
     margin-top: 14px;
     margin-right: 187px;
     font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        width: 100%;
+    }
+
+    main, .form-container, .form-section, .form-space, .login-success-container, .login-user-form {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .quote-container {
+        display: none;
+    }
 }
