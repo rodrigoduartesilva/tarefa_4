@@ -27,13 +27,13 @@
                 <form class="form-container" action="">
                     <div class="new-user-form">
                         <h2 class="form-subtitle">Vamos começar?</h2>
-                        <label for="">Nome completo<sup>*</sup></label>
-                        <input class="input-name" type="text" placeholder="João Souza">
+                        <label for="input-name">Nome completo<sup>*</sup></label>
+                        <input class="input-name" id="input-name" type="text" placeholder="João Souza">
     
-                        <label for="">Endereço de Email<sup>*</sup></label>
-                        <input class="input-email" type="email" placeholder="seunome@email.com">
+                        <label for="input-email">Endereço de Email<sup>*</sup></label>
+                        <input class="input-email" id="input-email" type="email" placeholder="seunome@email.com">
 
-                        <label for="">País<sup>*</sup></label>
+                        <label for="countries-option">País<sup>*</sup></label>
                         <select id="countries-option">
                             <option value="none">Selecione seu país</option>
                             <option value="brasil">Brasil</option>
@@ -42,14 +42,14 @@
                             <option value="uruguai">Uruguai</option>
                         </select>
     
-                        <label for="">Número de Telefone</label>
+                        <label for="input-tel">Número de Telefone</label>
                         <div class="tel-container">
                             <input class="cod-country" type="text" disabled>
-                            <input class="input-tel" type="tel" name="telefone" size="20" onkeypress="mascara(this)">
+                            <input class="input-tel" id="input-tel" type="tel" name="telefone" size="20" onkeypress="mascara(this)">
                         </div>
     
-                        <label for="">Senha<sup>*</sup></label>
-                        <input class="input-password" type="password" placeholder="Digite sua senha">
+                        <label for="input-password">Senha<sup>*</sup></label>
+                        <input class="input-password" id="input-password" type="password" placeholder="Digite sua senha">
     
                         <button class="btn-create-user">Criar usuário</button>
                         <span>Já é cadastrado? <a href="./login.html">Login</a></span>
@@ -69,6 +69,14 @@
     
     <footer>
         <nav>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                </ul>
+            </div>
+
             <div class="menu-footer">
                 <ul>
                     <li><a href="./sobreNos.html">Sobre nós</a></li>

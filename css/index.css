@@ -1,6 +1,4 @@
 main section {
-    width: 600px;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,21 +7,34 @@ main section {
 }
 
 main section h1 {
-    font-size: 28px;
+    margin-bottom: 3.75rem;
+    font-size: 1.75rem;
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #2f6066;
 }
 
 .container-principal {
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    height: 33.125rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 1.875rem;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #FFFFFF;
-    text-shadow: 2px 2px 2px #2f6066;
+    text-shadow: 0.125rem 0.125rem 0.125rem #2f6066;
+}
+
+.container-principal p {
+    width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+    .container-principal {
+        height: 100%;
+        padding: 1.875rem 0 5.625rem 0;
+        font-size: 1.2188rem;
+    }
 }

@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 
 * {
-    max-height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Space Grotesk', sans-serif;
 }
 
 body {
-    width: 700px;
-    margin: 10px auto;
+    max-height: 100vh;
+    width: 43.75rem;
+    margin: 0.625rem auto;
     background: #E5E5E5;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 /*Estilização header e footer*/
+
+header, footer {
+    height: 2.1875rem;
+    background: #FFFFFF;
+}
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 nav h1 {
@@ -28,42 +34,65 @@ nav h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    position: absolute;
+    margin-left: 2.5rem;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
-    padding: 10px 50px;
+    padding: 0.625rem 3.125rem;
 }
 
 .menu-header, .menu-footer {
-    text-shadow: 1px 1px 1px #2f6066;
-}
-
-.menu-header{
+    width: 50%;
+    height: 100%;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #2f6066;
     background: linear-gradient(55deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    width: 343px;
-    margin-left: 350px;
 }
 
-.menu-footer {
-    background: linear-gradient(55deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    width: 343px;
-    margin-left: 350px;
+.social-icons {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav ul li {
-    margin-right: 24px;
+.menu-header ul, .social-icons ul, .menu-footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15.625rem;
+    height: 100%;
+}
+
+.menu-header a:hover, .menu-footer a:hover {
+    opacity: .4;
+}
+
+.social-icons ul{
+    width: 12.5rem;
+}
+
+.social-icons a {
+    color: #496F74;
 }
 
 nav ul li a {
     text-decoration: none;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #FFFFFF;
 }
 
-nav ul li a:hover {
-    opacity: 0.4;
+.bi-facebook:hover {
+    color: #3B5998;
+}
+
+.bi-instagram:hover {
+    color: #8A3AB9;
+}
+
+.bi-twitter:hover {
+    color: #00ACEE;
 }

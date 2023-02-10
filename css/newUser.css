@@ -1,23 +1,29 @@
 main {
+    width: 700px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 650px;
-    height: 500px;
 }
 
 .form-section {
+    width: 350px;
+    height: 536px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.form-container {
+    width: 100%;
+    height: 100%;
+}
+
 .subtitle-message {
     display: flex;
     align-items: center;
-    width: 392px;
-    height: 581px;
+    width: 100%;
+    height: 100%;
     padding: 50px;
     text-align: center;
     background-color: #FFFFFF;
@@ -25,6 +31,8 @@ main {
 }
 
 .new-user-form {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 19px 50px;
@@ -32,54 +40,51 @@ main {
 }
 
 .new-user-form h2 {
-    font-size: 20px;
-    margin-top: 30px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 1.25rem;
+}
+
+.new-user-form label {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.new-user-form label sup {
+    color: #961010;
 }
 
 .new-user-form input {
     all: unset;
-    width: 280px;
-    height: 30px;
+    width: 100%;
+    height: 1.875rem;
     margin-top: 5px;
+    margin-bottom: 5px;
     padding: 5px;
     border: 1px solid #CCCCCC;
     border-radius: 3px;
 }
 
-.new-user-form ::placeholder {
+.new-user-form input::placeholder {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .new-user-form input:focus {
     border: 1px solid #284A5E;
 }
 
-.new-user-form label {
-    margin-top: 15px;
-    font-weight: 400;
-    font-size: 15px;
-}
-
-.tel-container {
-    display: flex;
-}
-
-.tel-container .cod-country {
-    width: 16%;
-    margin-right: 2px;
-    background: #E6E0E0;
-    cursor: not-allowed;
-}
-
-.tel-container .input-tel {
-    width: 84%;
-}
-
 .new-user-form select {
-    margin: 5px 0 2px 0;
-    padding: 3px 5px;
-    height: 30px;
+    all: unset;
+    width: 100%;
+    height: 1.875rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 7px;
+    padding: 5px;
+    border-radius: 3px;
 }
 
 .new-user-form select:focus {
@@ -87,30 +92,53 @@ main {
     border-radius: 3px;
 }
 
+.tel-container {
+    display: flex;
+    width: 262px;
+}
+
+.tel-container .cod-country {
+    width: 16%;
+    padding: 1.5px;
+    margin-right: 2px;
+    background: #E6E0E0;
+    cursor: not-allowed;
+}
+
+.tel-container .input-tel {
+    width: 84%;
+    padding: 1.5px;
+}
+
 .new-user-form button {
     all: unset;
+    width: 100%;
     text-align: center;
-    padding: 6px 5px;
+    margin-top: 15px;
+    padding: 10.5px 6px;
     background: linear-gradient(93.38deg, #496F74 -3.47%, #2D4F61 84.29%);
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
     border-radius: 3px;
-    margin-top: 17.5px;
 }
 
 .new-user-form button:hover {
     cursor: pointer;
     opacity: .9;
+    border: 1.5px solid #072E44;
+    padding: 9.5px 5px;
 }
 
 .new-user-form button:focus {
     opacity: .9;
+    border: 1.5px solid #072E44;
+    padding: 9.5px 5px;
 }
 
 .new-user-form span {
-    margin-top: 8px;
     text-align: center;
+    margin-top: 15px;
 }
 
 .new-user-form span a:hover {
@@ -130,8 +158,8 @@ main {
     align-items: center;
     justify-content: center;
     background: linear-gradient(93.38deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    width: 343px;
-    height: 500px;
+    width: 350px;
+    height: 536px;
     padding: 30px;
     font-weight: 700;
     font-size: 32px;
@@ -143,4 +171,10 @@ main {
     margin-top: 14px;
     margin-right: 190px;
     font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+    .quote-container {
+        display: none;
+    }
 }
