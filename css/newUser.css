@@ -93,22 +93,21 @@ main {
 }
 
 .tel-container {
-    width: 16.375rem;
+    width: 105%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .tel-container .cod-country {
-    width: 20%;
+    width: 25%;
     padding: 0.0938rem;
-    margin-right: 0.125rem;
     background: #E6E0E0;
     cursor: not-allowed;
 }
 
 .tel-container .input-tel {
-    width: 100%;
+    width: 68%;
     padding: 0.0938rem 0.0938rem 0.0938rem 0.3125rem;
 }
 
@@ -116,7 +115,7 @@ main {
     all: unset;
     width: 100%;
     text-align: center;
-    margin-top: 0.9375rem;
+    margin-top: 5px;
     padding: 0.6563rem 0.375rem;
     background: linear-gradient(93.38deg, #496F74 -3.47%, #2D4F61 84.29%);
     font-weight: 700;
@@ -189,10 +188,6 @@ main {
     .new-user-form {
         display: flex;
         justify-content: center;
-    }
-
-    .tel-container {
-        width: 17.9375rem;
     }
 
     .quote-container {
