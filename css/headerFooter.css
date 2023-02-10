@@ -7,8 +7,8 @@
 }
 
 body {
-    max-height: 100vh;
     width: 43.75rem;
+    min-height: calc(100vh - 30px);
     margin: 0.625rem auto;
     background: #E5E5E5;
     font-family: 'Space Grotesk', sans-serif;
@@ -95,4 +95,52 @@ nav ul li a {
 
 .bi-twitter:hover {
     color: #00ACEE;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header h1 {
+        width: 100%;
+        height: 2.1875rem;
+        margin: 2.1875rem auto 0;
+        text-align: center;
+        position: absolute;
+    }
+
+    header .menu-header {
+        width: 100%;
+        position: relative;
+    }
+
+    header .menu-header ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-icons, .menu-footer {
+        width: 100%;
+    }
+
+    .menu-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
