@@ -20,7 +20,7 @@ btnEnviar.addEventListener('click', function (event) {
         event.preventDefault();
     } else {
         contactForm.remove();
-        successText.textContent = "Mensagem enviada com sucesso, em breve entraremos em contato!";
+        successText.innerHTML = "<p class='msg-success-container'>Mensagem enviada com sucesso, em breve entraremos em contato!</p>";
 
         setTimeout(() => {
             successText.remove();
@@ -29,6 +29,7 @@ btnEnviar.addEventListener('click', function (event) {
             inputName.value = '';
             inputEmail.value = '';
             textMessage.value = '';
+            window.location.reload();
         }, 4000);
     }
 });
