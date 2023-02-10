@@ -183,15 +183,17 @@ main {
     
     main, .form-section-container, .form-section {
         width: 100%;
-        height: 35rem;
+        height: 100vh;
     }
 
-    .form-subtitle {
-        padding: 0.625rem;
+    .form-section-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .tel-container {
-        width: 287px;
+        width: 17.9375rem;
     }
 
     .quote-container {
