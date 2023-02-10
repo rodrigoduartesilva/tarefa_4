@@ -186,9 +186,8 @@ main {
         height: 100vh;
     }
 
-    .form-section-container {
+    .new-user-form {
         display: flex;
-        align-items: center;
         justify-content: center;
     }
 
