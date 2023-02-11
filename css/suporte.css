@@ -1,62 +1,109 @@
-body {
-    margin: 10px auto;
-    background: #E5E5E5;
-}
-
 main {
+    width: 100%;
+    height: 33.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 650px;
-    height: 500px;
 }
 
 main section {
+    width: 100%;
+    height: 100%;
     background: #FFFFFF;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 main section picture {
-    width: 392px;
-    height: 581px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .suport-pic {
-    height: 300px;
-    width: 300px;
-    border: 1px solid #21828f;
+    height: 18.75rem;
+    width: 18.75rem;
+    border: 0.0625rem solid #21828f;
     border-radius: 50%;
 }
 
+.suport-container-mobile {
+    display: none;
+}
+
 .suport-container {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(93.38deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    width: 343px;
-    height: 500px;
     padding: 30px;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #2f6066;
 }
 
 .suport-container h3 {
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .suport-container p {
-    margin-top: 14px;
+    margin-top: 0.875rem;
     text-align: center;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .suport-container span {
-    font-size: 15px;
+    font-size: 0.9375rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+    }
+
+    main section {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .suport-pic {
+        width: 70%;
+        height: 90%;
+        margin-bottom: 1.25rem;
+    }
+
+    .suport-container-mobile {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #2f6066;
+    }
+
+    .suport-container-mobile h3 {
+        margin-bottom: 15px;
+    }
+
+    .suport-container {
+        display: none;
+    }
 }
