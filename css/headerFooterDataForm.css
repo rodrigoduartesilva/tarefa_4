@@ -9,16 +9,21 @@
 }
 
 body {
-    width: 700px;
-    margin: 10px auto;
+    width: 43.75rem;
+    margin:auto;
     background: #E5E5E5;
 }
 
 /*Estilização header e footer*/
 
+header, footer {
+    width: 100%;
+    height: 3.125rem;
+}
+
 nav {
+    height: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -27,43 +32,55 @@ nav h1 {
     color: #FFFFFF;    
 }
 
+.menu-header, .menu-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(55deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #2f6066;
+}
+
 nav ul {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     list-style-type: none;
-    padding: 10px 50px;
+    padding: 0.625rem 3.125rem;
 }
 
-.menu-header, .menu-footer {
-    text-shadow: 1px 1px 1px #2f6066;
+header nav ul li {
+    width: 3.75rem;
 }
 
-.menu-header{
-    background: linear-gradient(55deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    width: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.menu-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background: linear-gradient(55deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    width: 700px;
-}
-
-nav ul li {
-    margin-right: 24px;
+footer nav ul li {
+    width: 6.25rem;
 }
 
 nav ul li a {
     text-decoration: none;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #FFFFFF;
 }
 
 nav ul li a:hover {
     opacity: 0.4;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    nav ul {
+        text-align: center;
+    }
 }
