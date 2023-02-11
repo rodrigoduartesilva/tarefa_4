@@ -32,6 +32,15 @@ main section h1 {
 }
 
 @media screen and (max-width: 480px) {
+
+    body {
+        height: 100vh;
+    }
+
+    main {
+        height: 100%;
+    }
+
     .container-principal {
         height: 100%;
         padding: 1.875rem 0 5.625rem 0;
