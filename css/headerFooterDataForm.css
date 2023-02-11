@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 
-* {
-    max-height: 100vh;
+* {    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +8,7 @@
 }
 
 body {
-    width: 43.75rem;
+    width: 100%;
     margin:auto;
     background: #E5E5E5;
 }
