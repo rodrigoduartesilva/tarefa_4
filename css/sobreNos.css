@@ -1,35 +1,34 @@
-body {
-    margin: 10px auto;
-    background: #E5E5E5;
-}
-
 main {
+    width: 100%;
+    height: 536px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 650px;
-    height: 500px;
 }
 
 main section {
     background: #FFFFFF;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 main section picture {
-    width: 392px;
-    height: 581px;
+    width: 21.875rem;
+    height: 34.375rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.about-container-mobile {
+    display: none;
+}
+
 .kreativ-pic {
-    height: 300px;
-    width: 300px;
-    
-    border-radius: 3px;
+    height: 18.75rem;
+    width: 18.75rem;
+    border-radius: 0.1875rem;
 }
 
 .about-container {
@@ -38,21 +37,75 @@ main section picture {
     align-items: center;
     justify-content: center;
     background: linear-gradient(93.38deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    width: 343px;
-    height: 500px;
+    width: 21.875rem;
+    height: 33.5rem;
     padding: 30px;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     color: #FFFFFF;
-    text-shadow: 2px 2px 2px #2f6066;
+    text-shadow: 0.125rem 0.125rem 0.125rem #2f6066;
 }
 
 .about-container h3 {
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .about-container p {
-    margin-top: 14px;
+    margin-top: 0.875rem;
     text-align: justify;
-    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        width: 100%;
+    }
+
+    main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+    }
+
+    main section {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section picture {
+        width: 100%;
+        margin: auto;
+    }
+
+    .kreativ-pic {
+        width: 70%;
+        height: 90%;
+        margin-bottom: 1.25rem;
+    }
+
+    .about-container-mobile {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #2f6066;
+    }
+
+    .about-container-mobile h3 {
+        margin-bottom: 15px;
+    }
+
+    .about-container {
+        display: none;
+    }
 }
